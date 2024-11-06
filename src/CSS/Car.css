@@ -1,0 +1,21 @@
+/* External CSS */
+
+.box {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 0.5);
+    text-align: center;
+    justify-content: center;
+    border-radius: 11px;
+}
+
+.images {
+    margin: 2vmin;
+    padding: 2vmin;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 25, 68);
+    width: 10px;
+    height: 10px;
+}

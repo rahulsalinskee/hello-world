@@ -1,0 +1,16 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.heading {
+    text-align: center;
+    gap: 44px;
+}
+
+.card-component {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
