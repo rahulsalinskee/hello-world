@@ -1,0 +1,23 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.box {
+    width: 550px;
+    /* margin: 10rem auto; */
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.box button {
+    width: 140px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10rem;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
