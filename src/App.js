@@ -12,6 +12,7 @@ function PrintName(name) {
 
 function App() {
   return (
+    /* ***** Instead of using div tag here, use React.Fragment or empty tag as it consumes less memory than div tag ***** */
     <div>
       <h1>Hello World</h1>
       <DisplayHello />
