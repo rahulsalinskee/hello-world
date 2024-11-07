@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../CSS/DigitalClock.css';
+import '../../CSS/DigitalClock.css';
 
 export function DigitalClock() {
     const currentTime = new Date().toLocaleTimeString();
