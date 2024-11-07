@@ -1,0 +1,35 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    width: 40rem;
+    height: 25rem;
+    text-align: center;
+    justify-content: center;
+    background-color: darkgoldenrod;
+    margin: 10 70rem 0 0;
+}
+
+.container increment reset decrement {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 2rem;
+    color: red;
+}
+
+.container display-count {
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 2rem;
+    color: red;
+}
