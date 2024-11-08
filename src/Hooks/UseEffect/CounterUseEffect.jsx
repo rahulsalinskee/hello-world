@@ -3,8 +3,6 @@ import '../../CSS/CounterUseEffect.css';
 
 export function CounterUseEffect() {
     const [count, setCount] = useState(0);
-    const [reset, setReset] = useState(0);
-    const [decrement, setDecrement] = useState(0);
 
     function Increment() {
         setCount(count + 1);
