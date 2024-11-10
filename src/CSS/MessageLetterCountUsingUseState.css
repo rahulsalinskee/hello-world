@@ -1,0 +1,66 @@
+.get-letter-count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0a0f0;
+    height: 50vh;
+    width: 100vh;
+    margin: 10rem;
+    gap: 1rem;
+}
+
+.get-letter-count-container label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.get-letter-count-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    width: 15rem;
+}
+
+.get-letter-count-container button {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15rem;
+}
+
+.valid-message-length {
+    color: green;
+}
+
+.message-length-max {
+    color: orange;
+}
+
+.invalid-message-length {
+    color: red;
+}
+
+.display-message-length-container {
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    margin-top: -1rem;
+}
+
+.display-message-length-container label {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    font-weight: semi-bold;
+    color: #333;
+}
