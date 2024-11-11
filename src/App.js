@@ -9,7 +9,7 @@ import { DigitalClock } from './Hooks/UseState/DigitalClock';
 import { MessageLetterCountUsingUseRef } from './Hooks/UseRef/MessageLetterCountUsingUseRef';
 // import { A } from './Hooks/UseContext/PropDrilling/Problem/A';
 import { A } from './Hooks/UseContext/PropDrilling/Solution/A';
-import { Dashboard } from './Hooks/UseContext/DisplayName/Dashboard';
+import { Dashboard } from './Hooks/UseContext/DisplayNameUsingContextAPI/Dashboard';
 
 
 function App() {
