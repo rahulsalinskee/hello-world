@@ -11,8 +11,8 @@ import { MessageLetterCountUsingUseRef } from './Hooks/UseRef/MessageLetterCount
 import { A } from './Hooks/UseContext/PropDrilling/Solution/A';
 import { Dashboard } from './Hooks/UseContext/DisplayNameUsingUseContext/Dashboard';
 // import { Dashboard } from './Hooks/UseContext/DisplayNameUsingContextAPI/Dashboard';
-import { AdditionWithoutUseMemo } from './Hooks/UseMemo/ProblemWithoutUseMemo/AdditionWithoutUseMemo';
-// import { AdditionWithUseMemo } from './Hooks/UseMemo/SolutionWithUseMemo/AdditionWithUseMemo';
+// import { AdditionWithoutUseMemo } from './Hooks/UseMemo/ProblemWithoutUseMemo/AdditionWithoutUseMemo';
+import { AdditionWithUseMemo } from './Hooks/UseMemo/SolutionWithUseMemo/AdditionWithUseMemo';
 
 
 function App() {
@@ -31,8 +31,8 @@ function App() {
       {/* <A /> */}
       {/* <Dashboard /> */}
       {/* <Dashboard /> */}
-      <AdditionWithoutUseMemo />
-      {/* <AdditionWithUseMemo /> */}
+      {/* <AdditionWithoutUseMemo /> */}
+      <AdditionWithUseMemo />
     </>
   );
 }
