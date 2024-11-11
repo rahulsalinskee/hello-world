@@ -7,6 +7,9 @@ import { MessageLetterCountUsingUseState } from './Hooks/UseRef/MessageLetterCou
 import { Counter } from './Hooks/UseState/Counter';
 import { DigitalClock } from './Hooks/UseState/DigitalClock';
 import { MessageLetterCountUsingUseRef } from './Hooks/UseRef/MessageLetterCountUsingUseRef';
+// import { A } from './Hooks/UseContext/PropDrilling/Problem/A';
+import { A } from './Hooks/UseContext/PropDrilling/Solution/A';
+import { Dashboard } from './Hooks/UseContext/DisplayName/Dashboard';
 
 
 function App() {
@@ -20,7 +23,10 @@ function App() {
       {/* <InputForm /> */}
       {/* <CounterUseEffect /> */}
       {/* <MessageLetterCountUsingUseState /> */}
-      <MessageLetterCountUsingUseRef />
+      {/* <MessageLetterCountUsingUseRef /> */}
+      {/* <A /> */}
+      {/* <A /> */}
+      <Dashboard />
     </>
   );
 }
