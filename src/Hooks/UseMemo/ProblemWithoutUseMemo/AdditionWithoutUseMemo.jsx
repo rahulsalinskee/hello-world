@@ -20,7 +20,7 @@ export function AdditionWithoutUseMemo() {
     /* ***** 
     * Problem with this code is when we click on this (Please Click)) button, 
     * Count function is also getting called. 
-    * Here, there is no connection between both of these two buttons but even on the click onn button (Please Click)
+    * Here, there is no connection between both of these two buttons but even on the click on button (Please Click)
     * It is executing Count function. 
     * It is happening because of useState hook. 
     * What is happening here: When we click on (Please Click) button, we are updating UseState (state, setState) hook
