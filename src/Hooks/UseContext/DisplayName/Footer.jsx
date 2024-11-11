@@ -1,6 +1,11 @@
 import React from 'react';
 import { firstNameContext, lastNameContext } from './Dashboard';
 
+/* ***** 
+ * There is a problem with Context API that code becomes more complicated and more complex. 
+ * It also becomes hard to read and maintain 
+ * To solve this problem we use useContext hook
+***** */
 export function Footer() {
     return (
         <>
