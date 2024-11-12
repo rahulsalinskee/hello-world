@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TodoWithMemoFunction from './TodoWithMemoFunction';
-import '../../../CSS/CallBack.css';
+import '../../../../CSS/CallBack.css';
 
 export default function CallBackWithMemoFunction() {
     const [add, setAdd] = useState(0);
