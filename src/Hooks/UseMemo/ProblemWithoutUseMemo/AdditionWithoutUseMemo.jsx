@@ -24,7 +24,7 @@ export function AdditionWithoutUseMemo() {
     * It is executing Count function. 
     * It is happening because of useState hook. 
     * What is happening here: When we click on (Please Click) button, we are updating UseState (state, setState) hook
-    * Whenever we update sueState hook, it rerenders/refresh our component and then executes our entire code
+    * Whenever we update useState hook, it rerenders/refresh our component and then executes our entire code
     * Hence, here, when our state gets updated, our component rerenders. That means that our Count function will also get called & rerendered.
     * Even though there is no change in incremented value, Count function will be called again.
     * This is causing performance issue.
