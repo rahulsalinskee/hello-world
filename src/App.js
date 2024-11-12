@@ -14,6 +14,7 @@ import { Dashboard } from './Hooks/UseContext/DisplayNameUsingUseContext/Dashboa
 // import { AdditionWithoutUseMemo } from './Hooks/UseMemo/ProblemWithoutUseMemo/AdditionWithoutUseMemo';
 import { AdditionWithUseMemo } from './Hooks/UseMemo/SolutionWithUseMemo/AdditionWithUseMemo';
 import CallBack from './Hooks/UseCallBack/WithoutCallBack/CallBack';
+import CallBackWithMemoFunction from './Hooks/UseCallBack/UsingHigherOrderMemoFunction/CallBackWithMemoFunction';
 
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
       {/* <Dashboard /> */}
       {/* <AdditionWithoutUseMemo /> */}
       {/* <AdditionWithUseMemo /> */}
-      <CallBack />
+      {/* <CallBack /> */}
+      <CallBackWithMemoFunction />
     </>
   );
 }
