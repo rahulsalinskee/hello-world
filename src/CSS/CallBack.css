@@ -1,0 +1,25 @@
+.add-todo-button-container {
+    justify-content: left;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4rem;
+    gap: 1em;
+}
+
+.todo-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0a0f0;
+    margin-bottom: 4rem;
+    gap: 1rem;
+}
+
+.todo-data-container h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

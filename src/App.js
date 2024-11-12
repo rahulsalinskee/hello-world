@@ -13,6 +13,7 @@ import { Dashboard } from './Hooks/UseContext/DisplayNameUsingUseContext/Dashboa
 // import { Dashboard } from './Hooks/UseContext/DisplayNameUsingContextAPI/Dashboard';
 // import { AdditionWithoutUseMemo } from './Hooks/UseMemo/ProblemWithoutUseMemo/AdditionWithoutUseMemo';
 import { AdditionWithUseMemo } from './Hooks/UseMemo/SolutionWithUseMemo/AdditionWithUseMemo';
+import CallBack from './Hooks/UseCallBack/WithoutCallBack/CallBack';
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
       {/* <Dashboard /> */}
       {/* <Dashboard /> */}
       {/* <AdditionWithoutUseMemo /> */}
-      <AdditionWithUseMemo />
+      {/* <AdditionWithUseMemo /> */}
+      <CallBack />
     </>
   );
 }
