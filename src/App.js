@@ -21,6 +21,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AboutPage } from './Router/Pages/AboutPage';
 import { ContactPage } from './Router/Pages/ContactPage';
 import { HomePage } from './Router/Pages/HomePage';
+import { LoginPage } from './Router/Pages/LoginPage';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='/login' element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </>
