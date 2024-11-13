@@ -18,10 +18,10 @@ import CallBackWithMemoFunction from './Hooks/UseCallBack/ProblemWithoutCallBack
 import AdditionIncludesTodoListWithCallBack from './Hooks/UseCallBack/SolutionWithCallBack/WithCallBack/AdditionIncludesTodoListWithCallBack';
 import AlarmClockIcon from './MaterialUiIcon/AlarmClockIcon';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AboutPage } from './Router/Pages/AboutPage';
-import { ContactPage } from './Router/Pages/ContactPage';
-import { HomePage } from './Router/Pages/HomePage';
-import { LoginPage } from './Router/Pages/LoginPage';
+import { AboutPage } from './Router/ReactRouter/Pages/AboutPage';
+import { ContactPage } from './Router/ReactRouter/Pages/ContactPage';
+import { HomePage } from './Router/ReactRouter/Pages/HomePage';
+import { LoginPage } from './Router/ReactRouter/Pages/LoginPage';
 
 
 function App() {
