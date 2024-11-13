@@ -22,6 +22,7 @@ import { AboutPage } from './Router/ReactRouter/Pages/AboutPage';
 import { ContactPage } from './Router/ReactRouter/Pages/ContactPage';
 import { HomePage } from './Router/ReactRouter/Pages/HomePage';
 import { LoginPage } from './Router/ReactRouter/Pages/LoginPage';
+import { ErrorPage } from './Router/ReactRouter/Pages/ErrorPage';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/login' element={<LoginPage />} />
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </>
