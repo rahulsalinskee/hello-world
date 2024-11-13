@@ -14,3 +14,7 @@ ul li a {
     text-decoration: none;
     margin-inline: 22px;
 }
+
+.active {
+    color: rgb(6, 255, 255);
+}
