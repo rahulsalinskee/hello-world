@@ -1,0 +1,16 @@
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a {
+    color: palevioletred;
+    font-size: 25px;
+    text-decoration: none;
+    margin-inline: 22px;
+}
