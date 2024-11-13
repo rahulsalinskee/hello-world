@@ -16,6 +16,7 @@ import { AdditionWithUseMemo } from './Hooks/UseMemo/SolutionWithUseMemo/Additio
 import WithoutCallBack from './Hooks/UseCallBack/ProblemWithoutCallBack/WithoutCallBack/WithoutCallBack';
 import CallBackWithMemoFunction from './Hooks/UseCallBack/ProblemWithoutCallBack/UsingHigherOrderMemoFunction/CallBackWithMemoFunction';
 import AdditionIncludesTodoListWithCallBack from './Hooks/UseCallBack/SolutionWithCallBack/WithCallBack/AdditionIncludesTodoListWithCallBack';
+import AlarmClockIcon from './MaterialUiIcon/AlarmClockIcon';
 
 
 function App() {
@@ -36,9 +37,10 @@ function App() {
       {/* <Dashboard /> */}
       {/* <AdditionWithoutUseMemo /> */}
       {/* <AdditionWithUseMemo /> */}
-      <WithoutCallBack />
+      {/* <WithoutCallBack /> */}
       {/* <CallBackWithMemoFunction /> */}
       {/* <AdditionIncludesTodoListWithCallBack /> */}
+      <AlarmClockIcon />
     </>
   );
 }
