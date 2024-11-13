@@ -17,6 +17,10 @@ import WithoutCallBack from './Hooks/UseCallBack/ProblemWithoutCallBack/WithoutC
 import CallBackWithMemoFunction from './Hooks/UseCallBack/ProblemWithoutCallBack/UsingHigherOrderMemoFunction/CallBackWithMemoFunction';
 import AdditionIncludesTodoListWithCallBack from './Hooks/UseCallBack/SolutionWithCallBack/WithCallBack/AdditionIncludesTodoListWithCallBack';
 import AlarmClockIcon from './MaterialUiIcon/AlarmClockIcon';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AboutPage } from './Router/Pages/AboutPage';
+import { ContactPage } from './Router/Pages/ContactPage';
+import { HomePage } from './Router/Pages/HomePage';
 
 
 function App() {
@@ -40,7 +44,15 @@ function App() {
       {/* <WithoutCallBack /> */}
       {/* <CallBackWithMemoFunction /> */}
       {/* <AdditionIncludesTodoListWithCallBack /> */}
-      <AlarmClockIcon />
+      {/* <AlarmClockIcon /> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
