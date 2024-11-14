@@ -15,7 +15,12 @@ export function ContactPage() {
                 <NavLink to='twitter'>XIcon</NavLink>
             </div>
 
-            {/* In order to show the data of nested route components (Here, YouTube, GitHub, Twitter), we need to use Outlet tag  */}
+            {
+                /* ***** 
+                 * In order to show the data of nested route components (Here, YouTube, GitHub, Twitter), we need to use Outlet tag.
+                 * This is important. If it not implemented, nested component will not be rendered and it's content will not be loaded.
+                ***** */
+            }
             <Outlet />
         </>
     )
