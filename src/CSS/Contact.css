@@ -1,0 +1,10 @@
+.nested-route-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    background-color: rgb(204, 129, 37);
+    color: rgb(226, 9, 172);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}

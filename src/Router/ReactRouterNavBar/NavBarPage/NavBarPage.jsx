@@ -18,7 +18,7 @@ import { NavLink } from 'react-router-dom';
 export function NavBarPage() {
     return (
         <>
-            {/* /* ***** This entire nav tag including NavLink tag is for NavBar ***** */}
+            {/* ***** This entire nav tag including NavLink tag is for NavBar ***** */}
             <nav>
                 <ul>
                     <li>
