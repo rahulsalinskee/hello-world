@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavBarPage } from '../ReactRouterNavBar/NavBarPage/NavBarPage';
+import { NavBarPage } from '../Router/ReactRouterNavBar/NavBarPage/NavBarPage';
 import { NavLink, Outlet } from 'react-router-dom';
-import '../../CSS/Contact.css';
+import '../CSS/Contact.css';
 
 export function ContactPage() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBarPage } from '../ReactRouterNavBar/NavBarPage/NavBarPage';
+import { NavBarPage } from '../Router/ReactRouterNavBar/NavBarPage/NavBarPage';
 
 export function AboutPage() {
     return (
