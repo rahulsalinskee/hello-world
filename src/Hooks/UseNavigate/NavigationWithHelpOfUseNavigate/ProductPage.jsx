@@ -16,12 +16,17 @@ export function ProductPage() {
         navigateTo(homePagePath);
     }
 
+    function LoadBackPageButtonClickHandler() {
+        navigateTo(-1);
+    }
+
     return (
         <>
             <div>
                 <h3>This is Product Page!</h3>
                 <button onClick={LoadCartPageButtonClickHandler}>Cart</button>
                 <button onClick={LoadHomePageButtonClickHandler}>Home</button>
+                <button onClick={LoadBackPageButtonClickHandler}>Go Back!</button>
             </div>
         </>
     )
