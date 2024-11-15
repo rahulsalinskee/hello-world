@@ -27,6 +27,8 @@ import { TwitterPage } from './Pages/TwitterPage';
 import { GitHubPage } from './Pages/GitHubPage';
 import { YouTubePage } from './Pages/YouTubePage';
 import { DashboardPage } from './Pages/DashboardPage';
+import { ProductPage } from './Hooks/UseNavigate/NavigationWithHelpOfUseNavigate/ProductPage';
+import CartPage from './Hooks/UseNavigate/NavigationWithHelpOfUseNavigate/CartPage';
 
 
 function App() {
@@ -64,6 +66,9 @@ function App() {
             <Route path='youtube' element={<YouTubePage />} />
           </Route>
           <Route path='/dashboard' element={<DashboardPage />} />
+          {/* Need to add route here for UseNavigate Hook. In this case ProductPage and CartPage needs to be added in Route. */}
+          <Route path='/product' element={<ProductPage />} />
+          <Route path='/cart' element={<CartPage />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
