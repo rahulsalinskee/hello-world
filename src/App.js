@@ -26,6 +26,7 @@ import { ErrorPage } from './Pages/ErrorPage';
 import { TwitterPage } from './Pages/TwitterPage';
 import { GitHubPage } from './Pages/GitHubPage';
 import { YouTubePage } from './Pages/YouTubePage';
+import { DashboardPage } from './Pages/DashboardPage';
 
 
 function App() {
@@ -53,7 +54,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<LoginPage />} />
+          <Route path='/home' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           /* Nested Routing - Adding YouTube | Twitter | GitHub in contact page */
           <Route path='/contact/' element={<ContactPage />}>
@@ -61,7 +63,7 @@ function App() {
             <Route path='twitter' element={<TwitterPage />} />
             <Route path='youtube' element={<YouTubePage />} />
           </Route>
-          <Route path='/login' element={<LoginPage />} />
+          <Route path='/dashboard' element={<DashboardPage />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
