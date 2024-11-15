@@ -22,10 +22,10 @@ export function NavBarPage() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/home">Home</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
-                        <NavLink to="/login">Login</NavLink>
+                        <NavLink to="/">Logout</NavLink>
                     </li>
                 </ul>
             </nav>
