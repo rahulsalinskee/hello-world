@@ -66,7 +66,9 @@ function App() {
             <Route path='youtube' element={<YouTubePage />} />
           </Route>
           <Route path='/dashboard' element={<DashboardPage />} />
-          {/* Need to add route here for UseNavigate Hook. In this case ProductPage and CartPage needs to be added in Route. */}
+          {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
+          <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />
+          {/* UseNavigate Hook: Need to add route here for UseNavigate Hook. In this case ProductPage and CartPage needs to be added in Route. */}
           <Route path='/product' element={<ProductPage />} />
           <Route path='/cart' element={<CartPage />} />
           <Route path='*' element={<ErrorPage />} />

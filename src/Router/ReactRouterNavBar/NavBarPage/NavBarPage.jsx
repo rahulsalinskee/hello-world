@@ -25,6 +25,7 @@ export function NavBarPage() {
                         <NavLink to="/home">Home</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/dashboard">Dashboard</NavLink>
                         <NavLink to="/">Logout</NavLink>
                     </li>
                 </ul>
