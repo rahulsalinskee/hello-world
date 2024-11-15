@@ -4,17 +4,17 @@ import { useNavigate } from 'react-router-dom';
 export default function CartPage() {
 
     const navigateTo = useNavigate();
-    const productPagePath = '/product';
 
-    function LoadProductPageButtonClickHandler(event) {
+    function LoadPreviousPageButtonClickHandler(event) {
         event.preventDefault();
-        navigateTo(productPagePath);
+        /* ***** This will take us to the previous page. Please pass -1 as a parameter without any quotes. ***** */
+        navigateTo(-1);
     }
     return (
         <>
             <div>
                 <h3>This is Cart Page!</h3>
-                <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
+                <button onClick={LoadPreviousPageButtonClickHandler}>Go Back</button>
             </div>
         </>
     )

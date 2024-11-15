@@ -1,6 +1,14 @@
 
 Use Navigate:
 
+Functionalities: This hook offers 2 functions - 
+ - Navigation to a page on a button click
+ - Navigation to the previous page / Go Back
+    - For that we need to pass -1 as an argument in navigate function without (single/double) quote.
+
+
+
+
 Difference between UseNavigate and NavLink?
 
 Purpose:
