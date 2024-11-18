@@ -1,8 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+/* ***** 1. Use Location Hook */
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export function ProductPage() {
     const navigateTo = useNavigate();
+    /* ***** 2. Use Location Hook to get the current location ***** */
+    const location = useLocation();
     const cartPagePath = '/cart';
     const homePagePath = '/home';
 
@@ -27,6 +30,8 @@ export function ProductPage() {
                 <button onClick={LoadCartPageButtonClickHandler}>Cart</button>
                 <button onClick={LoadHomePageButtonClickHandler}>Home</button>
                 <button onClick={LoadBackPageButtonClickHandler}>Go Back!</button>
+                {/* 3. Show the current location path with help of pathname property */}
+                <h3>Current Location: {location.pathname}</h3>
             </div>
         </>
     )
