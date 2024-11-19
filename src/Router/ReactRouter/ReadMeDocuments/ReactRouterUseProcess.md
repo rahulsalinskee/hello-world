@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 Example: 
 
-This code is inside APP JS file.
+This code is inside ApplicationRouter JSX file.
 
       <BrowserRouter>
         <Routes>

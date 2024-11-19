@@ -7,7 +7,7 @@ export function DashboardPage() {
     /* ***** UseLocation Hook: 2. Use Location Hook to get the current location ***** */
     const location = useLocation();
     /* ***** 
-     * Use Params - 2. The variable name(s) should be same as the variable name(s) in the route (App JS) 
+     * Use Params - 2. The variable name(s) should be same as the variable name(s) in the route (ApplicationRouter JSX) 
      * Here, firstName & lastName come as an object.
      * Hence, we need to access the value of the object using { }.
     ***** */
