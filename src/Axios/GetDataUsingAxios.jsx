@@ -7,7 +7,7 @@ export function GetDataUsingAxios() {
     const [isDataShown, setIsDataShown] = useState(true);
     const [error, setError] = useState(null);
 
-    function GetApiData() {
+    function GetApiDataUsingThenCatch() {
         axios.get(GET_DATA)
             .then((response) => {
                 setData(response.data);
@@ -18,11 +18,23 @@ export function GetDataUsingAxios() {
             });
     }
 
+    async function GetApiDataUsingAsyncAwait() {
+        try {
+            const response = await axios.get(GET_DATA);
+            setData(response.data);
+            setError(null);
+        }
+        catch (error) {
+            setError(error.message);
+        }
+    }
+
     function ShowApiDataOnButtonClick() {
         setIsDataShown(!isDataShown);
 
         if (isDataShown) {
-            GetApiData();
+            // GetApiDataUsingThenCatch();
+            GetApiDataUsingAsyncAwait();
         }
         else {
             setData([]);
