@@ -19,8 +19,6 @@ import AdditionIncludesTodoListWithCallBack from './Hooks/UseCallBack/SolutionWi
 import AlarmClockIcon from './MaterialUiIcon/AlarmClockIcon';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ApplicationRouter } from './Router/ApplicationRouter';
-import { GetDataUsingAxios } from './Axios/GetDataUsingAxios';
-
 
 function App() {
   return (
@@ -44,7 +42,6 @@ function App() {
       {/* <CallBackWithMemoFunction /> */}
       {/* <AdditionIncludesTodoListWithCallBack /> */}
       {/* <AlarmClockIcon /> */}
-      {/* <GetDataUsingAxios /> */}
 
       {/* ***** All the BrowserRouter related code is moved to Router.jsx file ***** */}
       <ApplicationRouter />
