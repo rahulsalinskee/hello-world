@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavBarPage } from '../Router/ReactRouterNavBar/NavBarPage/NavBarPage';
-import { GetDataUsingAxios } from '../Axios/GetDataUsingAxios';
+import { GetDataUsingAxios } from '../Axios/GetData/GetDataUsingAxios';
 
 export function AboutPage() {
     return (
