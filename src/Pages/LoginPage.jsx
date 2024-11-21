@@ -53,7 +53,9 @@ export function LoginPage() {
                                 <Mail className="mr-2" />
                                 <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                             </div>
-                            {emailError && <p className="text-red-500 text-xs italic">{emailError}</p>}
+                            {
+                                emailError && <p className="text-red-500 text-xs italic">{emailError}</p>
+                            }
                         </div>
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">Password</label>
@@ -61,7 +63,9 @@ export function LoginPage() {
                                 <Lock className="mr-2" />
                                 <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                             </div>
-                            {passwordError && <p className="text-red-500 text-xs italic">{passwordError}</p>}
+                            {
+                                passwordError && <p className="text-red-500 text-xs italic">{passwordError}</p>
+                            }
                         </div>
                         <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Login</button>
                     </form>

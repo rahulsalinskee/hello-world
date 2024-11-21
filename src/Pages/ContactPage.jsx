@@ -13,6 +13,7 @@ export function ContactPage() {
                 <NavLink to='youtube'>YouTube</NavLink>
                 <NavLink to='github'>GitHub</NavLink>
                 <NavLink to='twitter'>XIcon</NavLink>
+                <NavLink to='postDataUsingAxios'>Get a Call</NavLink>
             </div>
 
             {

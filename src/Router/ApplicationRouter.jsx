@@ -11,6 +11,7 @@ import { YouTubePage } from '../Pages/YouTubePage';
 import { DashboardPage } from '../Pages/DashboardPage';
 import { ProductPage } from '../Hooks/UseNavigate/NavigationWithHelpOfUseNavigate/ProductPage';
 import CartPage from '../Hooks/UseNavigate/NavigationWithHelpOfUseNavigate/CartPage';
+import { PostDataUsingAxios } from '../Axios/PostData/PostDataUsingAxios';
 
 export function ApplicationRouter() {
     return (
@@ -25,6 +26,7 @@ export function ApplicationRouter() {
                         <Route path='github' element={<GitHubPage />} />
                         <Route path='twitter' element={<TwitterPage />} />
                         <Route path='youtube' element={<YouTubePage />} />
+                        <Route path='postDataUsingAxios' element={<PostDataUsingAxios />} />
                     </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
