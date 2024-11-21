@@ -26,6 +26,8 @@ export function NavBarPage() {
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
                         <NavLink to="/dashboard">Dashboard</NavLink>
+                        <NavLink to='/component-without-lazy-loader'>Without Lazy Loading</NavLink>
+                        <NavLink to='/component-with-lazy-loader'>With Lazy Loading</NavLink>
                         <NavLink to="/">Logout</NavLink>
                     </li>
                 </ul>

@@ -1,0 +1,9 @@
+.component-data-without-lazy-loader-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4rem;
+    gap: 1em;
+    color: Blue;
+}
