@@ -15,6 +15,9 @@ import { PostDataUsingAxios } from '../Axios/PostData/PostDataUsingAxios';
 import { PutPostDeleteDataUsingAxios } from '../Axios/PutPostDeleteData/PutPostDeleteDataUsingAxios';
 import ComponentWithoutLazyLoader from '../LazyLoadingData/WithoutLazyLoading/ComponentWithoutLazyLoader';
 import ComponentWithLazyLoader from '../LazyLoadingData/WithLazyLoading/ComponentWithLazyLoader';
+import { ReducerHooksPage } from '../Pages/ReducerHooksPage';
+import { CounterAppWithUseState } from '../Hooks/UseReducer/CounterAppWithUseState/CounterAppWithUseState';
+import { CounterAppWithUseReducer } from '../Hooks/UseReducer/CounterAppWithUseReducer/CounterAppWithUseReducer';
 
 export function ApplicationRouter() {
     return (
@@ -31,6 +34,10 @@ export function ApplicationRouter() {
                         <Route path='youtube' element={<YouTubePage />} />
                         <Route path='postDataUsingAxios' element={<PostDataUsingAxios />} />
                         <Route path='PutDeleteDataUsingAxios' element={<PutPostDeleteDataUsingAxios />} />
+                    </Route>
+                    <Route path='/use-reducer-hook/' element={<ReducerHooksPage />}>
+                        <Route path='without-use-reducer' element={<CounterAppWithUseState />} />
+                        <Route path='with-use-reducer' element={<CounterAppWithUseReducer />} />
                     </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}

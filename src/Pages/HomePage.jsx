@@ -6,6 +6,7 @@ export function HomePage() {
     const navigateTo = useNavigate();
     const contactPagePath = '/contact';
     const productPagePath = '/product';
+    const hooksPagePath = '/use-reducer-hook';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -13,7 +14,15 @@ export function HomePage() {
     }
 
     function LoadProductPageButtonClickHandler(event) {
-        navigateTo('/product');
+        navigateTo(productPagePath);
+    }
+
+    function LoadHooksPageButtonClickHandler(event) {
+        navigateTo(hooksPagePath);
+    }
+
+    function BackButtonOnClickEventHandler(event) {
+        navigateTo(-1);
     }
 
     return (
@@ -21,8 +30,13 @@ export function HomePage() {
             <NavBarPage />
             <h3>This is Home Page!</h3>
 
-            <button onClick={LoadContactPageButtonClickHandler}>Contact Page</button>
-            <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
+            <div>
+                <button onClick={LoadContactPageButtonClickHandler}>Contact Page</button>
+                <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
+                <button onClick={LoadHooksPageButtonClickHandler}>Hooks Page</button>
+                <button onClick={BackButtonOnClickEventHandler}>Back</button>
+            </div>
+
         </>
     )
 }
