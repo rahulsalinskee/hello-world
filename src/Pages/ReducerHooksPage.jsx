@@ -17,6 +17,7 @@ export function ReducerHooksPage() {
             <div className='nested-route-container'>
                 <NavLink to='without-use-reducer'>Counter App With UseState</NavLink>
                 <NavLink to='with-use-reducer'>Counter App With UseReducer</NavLink>
+                <NavLink to='use-layout-effect-hook'>Use Layout Effect Hook</NavLink>
             </div>
             <Outlet />
         </>
