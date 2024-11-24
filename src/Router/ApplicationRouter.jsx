@@ -19,6 +19,9 @@ import { ReducerHooksPage } from '../Pages/ReducerHooksPage';
 import { CounterAppWithUseState } from '../Hooks/UseReducer/CounterAppWithUseState/CounterAppWithUseState';
 import { CounterAppWithUseReducer } from '../Hooks/UseReducer/CounterAppWithUseReducer/CounterAppWithUseReducer';
 import UseLayoutEffectApplication from '../Hooks/UseLayoutEffect/WithUseLayoutEffect/UseLayoutEffectApplication';
+import UseSyncExternalStoreApplication from '../Hooks/UseSyncExternalStore/UseSyncExternalStoreApplication/UseSyncExternalStoreApplication';
+import UseSyncExternalStoreHookPage from '../Pages/UseSyncExternalStoreHookPage';
+import CounterApplicationUsingUseSyncExternalStoreHook from '../Hooks/UseSyncExternalStore/CounterApplicationUsingUseSyncExternalStoreHook/CounterApplicationUsingUseSyncExternalStoreHook';
 
 export function ApplicationRouter() {
     return (
@@ -40,6 +43,10 @@ export function ApplicationRouter() {
                         <Route path='without-use-reducer' element={<CounterAppWithUseState />} />
                         <Route path='with-use-reducer' element={<CounterAppWithUseReducer />} />
                         <Route path='use-layout-effect-hook' element={<UseLayoutEffectApplication />} />
+                    </Route>
+                    <Route path='/use-sync-external-store-hook-page/' element={<UseSyncExternalStoreHookPage />}>
+                        <Route path='use-sync-external-store-application' element={<UseSyncExternalStoreApplication />} />
+                        <Route path='counter-application-using-use-sync-external-store-hook' element={<CounterApplicationUsingUseSyncExternalStoreHook />} />
                     </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}

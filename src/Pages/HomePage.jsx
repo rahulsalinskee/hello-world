@@ -7,6 +7,7 @@ export function HomePage() {
     const contactPagePath = '/contact';
     const productPagePath = '/product';
     const hooksPagePath = '/use-reducer-hook';
+    const useSyncExternalStoreHooksPagePath = '/use-sync-external-store-hook-page';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -25,16 +26,21 @@ export function HomePage() {
         navigateTo(-1);
     }
 
+    function LoadUseSyncExternalStoreHooksPageButtonClickHandler(event) {
+        navigateTo(useSyncExternalStoreHooksPagePath);
+    }
+
     return (
         <>
             <NavBarPage />
             <h3>This is Home Page!</h3>
 
             <div>
+                <button onClick={BackButtonOnClickEventHandler}>Back</button>
                 <button onClick={LoadContactPageButtonClickHandler}>Contact Page</button>
                 <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
-                <button onClick={LoadHooksPageButtonClickHandler}>Hooks Page</button>
-                <button onClick={BackButtonOnClickEventHandler}>Back</button>
+                <button style={{ width: '200px' }} onClick={LoadHooksPageButtonClickHandler}>Reducer Hooks Page</button>
+                <button style={{ width: '350px' }} onClick={LoadUseSyncExternalStoreHooksPageButtonClickHandler}>Use Sync External Store Hooks Page</button>
             </div>
 
         </>
