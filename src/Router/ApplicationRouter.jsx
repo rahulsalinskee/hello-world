@@ -22,6 +22,10 @@ import UseLayoutEffectApplication from '../Hooks/UseLayoutEffect/WithUseLayoutEf
 import UseSyncExternalStoreApplication from '../Hooks/UseSyncExternalStore/UseSyncExternalStoreApplication/UseSyncExternalStoreApplication';
 import UseSyncExternalStoreHookPage from '../Pages/UseSyncExternalStoreHookPage';
 import CounterApplicationUsingUseSyncExternalStoreHook from '../Hooks/UseSyncExternalStore/CounterApplicationUsingUseSyncExternalStoreHook/CounterApplicationUsingUseSyncExternalStoreHook';
+import UseTransitionHookPage from '../Pages/UseTransitionHookPage';
+import CountApplicationWithoutIsPending from '../Hooks/UseTransition/UseTransitionWithoutIsPendingApplication/CountApplicationWithoutIsPending';
+import PerformanceProblemInSearchFunctionality from '../Hooks/UseTransition/PerformanceProblemInSearchFunctionality/PerformanceProblemInSearchFunctionality';
+import SolutionForPerformanceInSearchFunctionality from '../Hooks/UseTransition/SolutionForPerformanceInSearchFunctionality/SolutionForPerformanceInSearchFunctionality';
 
 export function ApplicationRouter() {
     return (
@@ -48,6 +52,11 @@ export function ApplicationRouter() {
                         <Route path='use-sync-external-store-application' element={<UseSyncExternalStoreApplication />} />
                         <Route path='counter-application-using-use-sync-external-store-hook' element={<CounterApplicationUsingUseSyncExternalStoreHook />} />
                     </Route>
+                    <Route path='/use-transition-hook-page/' element={<UseTransitionHookPage />}>
+                        <Route path='count-application-without-is-pending' element={<CountApplicationWithoutIsPending />} />
+                        <Route path='performance-problem-in-search-functionality' element={<PerformanceProblemInSearchFunctionality />} />
+                        <Route path='solution-for-performance-in-search-functionality' element={<SolutionForPerformanceInSearchFunctionality />} />
+                    </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
                     <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />
@@ -58,7 +67,7 @@ export function ApplicationRouter() {
                     <Route path='/component-with-lazy-loader' element={<ComponentWithLazyLoader />} />
                     <Route path='*' element={<ErrorPage />} />
                 </Routes>
-            </Router>
+            </Router >
         </>
     )
 }

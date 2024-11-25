@@ -8,6 +8,7 @@ export function HomePage() {
     const productPagePath = '/product';
     const hooksPagePath = '/use-reducer-hook';
     const useSyncExternalStoreHooksPagePath = '/use-sync-external-store-hook-page';
+    const useTransitionHookPagePath = '/use-transition-hook-page';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -30,6 +31,11 @@ export function HomePage() {
         navigateTo(useSyncExternalStoreHooksPagePath);
     }
 
+    function LoadUseTransitionHooksPageButtonClickHandler(event) {
+        event.preventDefault();
+        navigateTo(useTransitionHookPagePath);
+    }
+
     return (
         <>
             <NavBarPage />
@@ -41,6 +47,7 @@ export function HomePage() {
                 <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
                 <button style={{ width: '200px' }} onClick={LoadHooksPageButtonClickHandler}>Reducer Hooks Page</button>
                 <button style={{ width: '350px' }} onClick={LoadUseSyncExternalStoreHooksPageButtonClickHandler}>Use Sync External Store Hooks Page</button>
+                <button style={{ width: '350px' }} onClick={LoadUseTransitionHooksPageButtonClickHandler}>Use Transition Hook Page</button>
             </div>
 
         </>
