@@ -24,8 +24,10 @@ import UseSyncExternalStoreHookPage from '../Pages/UseSyncExternalStoreHookPage'
 import CounterApplicationUsingUseSyncExternalStoreHook from '../Hooks/UseSyncExternalStore/CounterApplicationUsingUseSyncExternalStoreHook/CounterApplicationUsingUseSyncExternalStoreHook';
 import UseTransitionHookPage from '../Pages/UseTransitionHookPage';
 import CountApplicationWithoutIsPending from '../Hooks/UseTransition/UseTransitionWithoutIsPendingApplication/CountApplicationWithoutIsPending';
-import PerformanceProblemInSearchFunctionality from '../Hooks/UseTransition/PerformanceProblemInSearchFunctionality/PerformanceProblemInSearchFunctionality';
-import SolutionForPerformanceInSearchFunctionality from '../Hooks/UseTransition/SolutionForPerformanceInSearchFunctionality/SolutionForPerformanceInSearchFunctionality';
+import PerformanceProblemInFilterFunctionality from '../Hooks/UseTransition/PerformanceProblemInFilterFunctionality/PerformanceProblemInFilterFunctionality';
+import SolutionForPerformanceInFilterFunctionality from '../Hooks/UseTransition/SolutionForPerformanceInFilterFunctionality/SolutionForPerformanceInFilterFunctionality';
+import UseDeferredValueHookPage from '../Pages/UseDeferredValueHookPage';
+// import UseDeferredValueApplication from '../Hooks/UseDeferredValue/UseDeferredValueHookApplication/UseDeferredValueApplication';
 
 export function ApplicationRouter() {
     return (
@@ -54,9 +56,12 @@ export function ApplicationRouter() {
                     </Route>
                     <Route path='/use-transition-hook-page/' element={<UseTransitionHookPage />}>
                         <Route path='count-application-without-is-pending' element={<CountApplicationWithoutIsPending />} />
-                        <Route path='performance-problem-in-search-functionality' element={<PerformanceProblemInSearchFunctionality />} />
-                        <Route path='solution-for-performance-in-search-functionality' element={<SolutionForPerformanceInSearchFunctionality />} />
+                        <Route path='performance-problem-in-filter-functionality' element={<PerformanceProblemInFilterFunctionality />} />
+                        <Route path='solution-for-performance-in-filter-functionality' element={<SolutionForPerformanceInFilterFunctionality />} />
                     </Route>
+                    {/* <Route path='/use-deferred-value-hook-page/' element={<UseDeferredValueHookPage />}>
+                        <Route path='use-deferred-value-application' element={<UseDeferredValueApplication />} />
+                    </Route> */}
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
                     <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />
