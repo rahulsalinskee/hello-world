@@ -27,7 +27,10 @@ import CountApplicationWithoutIsPending from '../Hooks/UseTransition/UseTransiti
 import PerformanceProblemInFilterFunctionality from '../Hooks/UseTransition/PerformanceProblemInFilterFunctionality/PerformanceProblemInFilterFunctionality';
 import SolutionForPerformanceInFilterFunctionality from '../Hooks/UseTransition/SolutionForPerformanceInFilterFunctionality/SolutionForPerformanceInFilterFunctionality';
 import UseDeferredValueHookPage from '../Pages/UseDeferredValueHookPage';
-// import UseDeferredValueApplication from '../Hooks/UseDeferredValue/UseDeferredValueHookApplication/UseDeferredValueApplication';
+import SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication from '../Hooks/UseDeferredValue/SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication/SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication';
+import SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication from '../Hooks/UseDeferredValue/SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication/SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication';
+import CounterApplicationUsingUseDeferredValue from '../Hooks/UseDeferredValue/CounterApplicationUsingUseDeferredValue/CounterApplicationUsingUseDeferredValue';
+
 
 export function ApplicationRouter() {
     return (
@@ -59,9 +62,11 @@ export function ApplicationRouter() {
                         <Route path='performance-problem-in-filter-functionality' element={<PerformanceProblemInFilterFunctionality />} />
                         <Route path='solution-for-performance-in-filter-functionality' element={<SolutionForPerformanceInFilterFunctionality />} />
                     </Route>
-                    {/* <Route path='/use-deferred-value-hook-page/' element={<UseDeferredValueHookPage />}>
-                        <Route path='use-deferred-value-application' element={<UseDeferredValueApplication />} />
-                    </Route> */}
+                    <Route path='/use-deferred-value-hook-page/' element={<UseDeferredValueHookPage />}>
+                        <Route path='similar-problem-like-use-transition-without-using-use-deferred-value-hook-application' element={<SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication />} />
+                        <Route path='similar-problem-solution-like-use-transition-using-use-deferred-value-hook-application' element={<SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication />} />
+                        <Route path='counter-application-using-use-deferred-value-hook' element={<CounterApplicationUsingUseDeferredValue />} />
+                    </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
                     <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />

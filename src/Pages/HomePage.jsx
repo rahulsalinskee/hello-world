@@ -9,6 +9,7 @@ export function HomePage() {
     const hooksPagePath = '/use-reducer-hook';
     const useSyncExternalStoreHooksPagePath = '/use-sync-external-store-hook-page';
     const useTransitionHookPagePath = '/use-transition-hook-page';
+    const useDeferredValueHookPagePath = '/use-deferred-value-hook-page';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -36,6 +37,11 @@ export function HomePage() {
         navigateTo(useTransitionHookPagePath);
     }
 
+    function LoadUseDeferredValueHooksPageButtonClickHandler(event) {
+        event.preventDefault();
+        navigateTo(useDeferredValueHookPagePath);
+    }
+
     return (
         <>
             <NavBarPage />
@@ -47,9 +53,9 @@ export function HomePage() {
                 <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
                 <button style={{ width: '200px' }} onClick={LoadHooksPageButtonClickHandler}>Reducer Hooks Page</button>
                 <button style={{ width: '350px' }} onClick={LoadUseSyncExternalStoreHooksPageButtonClickHandler}>Use Sync External Store Hooks Page</button>
-                <button style={{ width: '350px' }} onClick={LoadUseTransitionHooksPageButtonClickHandler}>Use Transition Hook Page</button>
+                <button style={{ width: '250px' }} onClick={LoadUseTransitionHooksPageButtonClickHandler}>Use Transition Hook Page</button>
+                <button style={{ width: '300px' }} onClick={LoadUseDeferredValueHooksPageButtonClickHandler}>Use Deferred Value Hook Page</button>
             </div>
-
         </>
     )
 }
