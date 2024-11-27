@@ -10,6 +10,7 @@ export function HomePage() {
     const useSyncExternalStoreHooksPagePath = '/use-sync-external-store-hook-page';
     const useTransitionHookPagePath = '/use-transition-hook-page';
     const useDeferredValueHookPagePath = '/use-deferred-value-hook-page';
+    const useIdHookPage = '/use-id-hook-application-page';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -42,6 +43,11 @@ export function HomePage() {
         navigateTo(useDeferredValueHookPagePath);
     }
 
+    function UseIdHookPageButtonClickHandler(event) {
+        event.preventDefault();
+        navigateTo(useIdHookPage);
+    }
+
     return (
         <>
             <NavBarPage />
@@ -55,6 +61,7 @@ export function HomePage() {
                 <button style={{ width: '350px' }} onClick={LoadUseSyncExternalStoreHooksPageButtonClickHandler}>Use Sync External Store Hooks Page</button>
                 <button style={{ width: '250px' }} onClick={LoadUseTransitionHooksPageButtonClickHandler}>Use Transition Hook Page</button>
                 <button style={{ width: '300px' }} onClick={LoadUseDeferredValueHooksPageButtonClickHandler}>Use Deferred Value Hook Page</button>
+                <button style={{ width: '170px' }} onClick={UseIdHookPageButtonClickHandler}>Use Id Hook Page</button>
             </div>
         </>
     )

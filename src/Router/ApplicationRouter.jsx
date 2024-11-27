@@ -30,6 +30,8 @@ import UseDeferredValueHookPage from '../Pages/UseDeferredValueHookPage';
 import SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication from '../Hooks/UseDeferredValue/SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication/SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication';
 import SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication from '../Hooks/UseDeferredValue/SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication/SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication';
 import CounterApplicationUsingUseDeferredValue from '../Hooks/UseDeferredValue/CounterApplicationUsingUseDeferredValue/CounterApplicationUsingUseDeferredValue';
+import UseIdHookPage from '../Pages/UseIdHookPage';
+import UseIdApplication from '../Hooks/UseId/UseIdApplication/UseIdApplication';
 
 
 export function ApplicationRouter() {
@@ -66,6 +68,9 @@ export function ApplicationRouter() {
                         <Route path='similar-problem-like-use-transition-without-using-use-deferred-value-hook-application' element={<SimilarProblemLikeUseTransitionWithoutUsingUseDeferredValueHookApplication />} />
                         <Route path='similar-problem-solution-like-use-transition-using-use-deferred-value-hook-application' element={<SimilarProblemSolutionLikeUseTransitionUsingUseDeferredValueHookApplication />} />
                         <Route path='counter-application-using-use-deferred-value-hook' element={<CounterApplicationUsingUseDeferredValue />} />
+                    </Route>
+                    <Route path='/use-id-hook-application-page/' element={<UseIdHookPage />}>
+                        <Route path='use-id-hook-application' element={<UseIdApplication />} />
                     </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
