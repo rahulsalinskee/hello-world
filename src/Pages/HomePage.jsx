@@ -10,7 +10,8 @@ export function HomePage() {
     const useSyncExternalStoreHooksPagePath = '/use-sync-external-store-hook-page';
     const useTransitionHookPagePath = '/use-transition-hook-page';
     const useDeferredValueHookPagePath = '/use-deferred-value-hook-page';
-    const useIdHookPage = '/use-id-hook-application-page';
+    const useIdHookPagePath = '/use-id-hook-application-page';
+    const customHookPagePath = '/custom-hook-page';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -45,7 +46,12 @@ export function HomePage() {
 
     function UseIdHookPageButtonClickHandler(event) {
         event.preventDefault();
-        navigateTo(useIdHookPage);
+        navigateTo(useIdHookPagePath);
+    }
+
+    function CustomHookButtonClickHandler(event) {
+        event.preventDefault();
+        navigateTo(customHookPagePath);
     }
 
     return (
@@ -53,15 +59,16 @@ export function HomePage() {
             <NavBarPage />
             <h3>This is Home Page!</h3>
 
-            <div>
-                <button onClick={BackButtonOnClickEventHandler}>Back</button>
-                <button onClick={LoadContactPageButtonClickHandler}>Contact Page</button>
-                <button onClick={LoadProductPageButtonClickHandler}>Product Page</button>
-                <button style={{ width: '200px' }} onClick={LoadHooksPageButtonClickHandler}>Reducer Hooks Page</button>
-                <button style={{ width: '350px' }} onClick={LoadUseSyncExternalStoreHooksPageButtonClickHandler}>Use Sync External Store Hooks Page</button>
-                <button style={{ width: '250px' }} onClick={LoadUseTransitionHooksPageButtonClickHandler}>Use Transition Hook Page</button>
-                <button style={{ width: '300px' }} onClick={LoadUseDeferredValueHooksPageButtonClickHandler}>Use Deferred Value Hook Page</button>
-                <button style={{ width: '170px' }} onClick={UseIdHookPageButtonClickHandler}>Use Id Hook Page</button>
+            <div style={{ textAlignment: 'center', backgroundColor: 'lightgreen', display: 'flex', flexDirection: 'row', gap: '1rem', height: '10rem', width: 'auto', padding: '1.5rem', }}>
+                <button onClick={BackButtonOnClickEventHandler} style={{ color: 'green', backgroundColor: 'transparent', border: '1px solid black' }}>Back</button>
+                <button onClick={LoadContactPageButtonClickHandler} style={{ color: 'green', backgroundColor: 'transparent', border: '1px solid black' }}>Contact Page</button>
+                <button onClick={LoadProductPageButtonClickHandler} style={{ color: 'green', backgroundColor: 'transparent', border: '1px solid black' }}>Product Page</button>
+                <button style={{ width: '200px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={LoadHooksPageButtonClickHandler}>Reducer Hooks Page</button>
+                <button style={{ width: '350px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={LoadUseSyncExternalStoreHooksPageButtonClickHandler}>Use Sync External Store Hooks Page</button>
+                <button style={{ width: '250px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={LoadUseTransitionHooksPageButtonClickHandler}>Use Transition Hook Page</button>
+                <button style={{ width: '300px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={LoadUseDeferredValueHooksPageButtonClickHandler}>Use Deferred Value Hook Page</button>
+                <button style={{ width: '170px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={UseIdHookPageButtonClickHandler}>Use Id Hook Page</button>
+                <button style={{ width: '170px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={CustomHookButtonClickHandler}>Custom Hook Page</button>
             </div>
         </>
     )
