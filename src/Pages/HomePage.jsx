@@ -12,6 +12,7 @@ export function HomePage() {
     const useDeferredValueHookPagePath = '/use-deferred-value-hook-page';
     const useIdHookPagePath = '/use-id-hook-application-page';
     const customHookPagePath = '/custom-hook-page';
+    const reduxToolKitPage = '/redux-tool-kit-page';
 
     function LoadContactPageButtonClickHandler(event) {
         event.preventDefault();
@@ -54,6 +55,11 @@ export function HomePage() {
         navigateTo(customHookPagePath);
     }
 
+    function ReduxToolKitButtonClickHandler(event) {
+        event.preventDefault();
+        navigateTo(reduxToolKitPage);
+    }
+
     return (
         <>
             <NavBarPage />
@@ -69,6 +75,7 @@ export function HomePage() {
                 <button style={{ width: '300px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={LoadUseDeferredValueHooksPageButtonClickHandler}>Use Deferred Value Hook Page</button>
                 <button style={{ width: '170px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={UseIdHookPageButtonClickHandler}>Use Id Hook Page</button>
                 <button style={{ width: '170px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={CustomHookButtonClickHandler}>Custom Hook Page</button>
+                <button style={{ width: '170px', color: 'green', backgroundColor: 'transparent', border: '1px solid black' }} onClick={ReduxToolKitButtonClickHandler}>Redux Tool Kit Page</button>
             </div>
         </>
     )

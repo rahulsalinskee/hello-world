@@ -34,6 +34,8 @@ import UseIdHookPage from '../Pages/UseIdHookPage';
 import UseIdApplication from '../Hooks/UseId/UseIdApplication/UseIdApplication';
 import CustomHookPage from '../Pages/CustomHookPage';
 import CustomHookApplication from '../Hooks/CustomHook/CustomHookApplication/CustomHookApplication';
+import ReduxToolKitPage from '../Pages/ReduxToolKitPage';
+import ReduxToolKitTodoApp from '../ReduxToolKit/TodoApplicationUsingReduxToolKit/ReduxToolKitTodoApp';
 
 
 export function ApplicationRouter() {
@@ -76,6 +78,9 @@ export function ApplicationRouter() {
                     </Route>
                     <Route path='/custom-hook-page/' element={<CustomHookPage />}>
                         <Route path='custom-hook-application' element={<CustomHookApplication />} />
+                    </Route>
+                    <Route path='/redux-tool-kit-page/' element={<ReduxToolKitPage />}>
+                        <Route path='redux-tool-kit-todo-app' element={<ReduxToolKitTodoApp />} />
                     </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
                     {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
