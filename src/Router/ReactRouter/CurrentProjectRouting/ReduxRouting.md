@@ -6,14 +6,16 @@
 
 - Where these P1 and P2 paths are being used:
     - P1: 
-        - This is used in these files:
-            - HomePage.jsx
-            - ApplicationRouter.jsx (Outer Route R1)
+        - 'redux-tool-kit-page'
+            - This is used in these files:
+                - HomePage.jsx
+                - ApplicationRouter.jsx (Outer Route R1)
 
     - P2:
-        - This is used in these files:
-            - ApplicationRouter.jsx
-            - ReduxToolKitPage.jsx (Inner Route R2)
+        - 'redux-tool-kit-todo-app'
+            - This is used in these files:
+                - ApplicationRouter.jsx
+                - ReduxToolKitPage.jsx (Inner Route R2)
 
 - Current navigational Functionality for Redux Tool Kit Todo Application:
     - Home Page => 
@@ -23,6 +25,9 @@
                     There is hyperlink (NavLink) for 'Redux Tool Kit Todo App' (For Path P2) on 'Redux Tool Kit Page' (On Path P1) => 
                         Click on the hyperlink (NavLink) on 'Redux Tool Kit Page' to navigate on Todo Application using Redux Tool Kit =>
                             Now user is on Redux Tool Kit Todo App (Path P2)
+
+    - URL Format: http://localhost:3000/redux-tool-kit-page/redux-tool-kit-todo-app
+        - http://localhost:3000/P1/P2
 
 - How many files need to be changed for adding route (1 level inner route): 3 files
     1. File Name: HomePage.jsx
@@ -39,7 +44,12 @@
 
     2. File Name: ApplicationRouter.jsx
         - This file contains all the Routing mechanism using React router for the application.
-        - This file contains tag for Router => Routes => Route (Lets say R1 - Outer Route) => Route (Lets say R2 - Inner Route in order to show nested routing)
+        - This file contains tag for 
+            * Router => 
+                Routes => 
+                    Route (Lets say R1 - Outer Route) => 
+                        Route (Lets say R2 - Inner Route in order to show nested routing)
+
         - Each Route tag has path and element properties
         - For Route R1 (For Outer Route): 
             - The path has to be set as P1, enclosed by '/' (without quote) from both the ends. 
@@ -48,10 +58,9 @@
             - The path has to be set as P2.
             - The element has to be set as ReduxToolKitTodoApp enclosed by tag.
 
-         P1:   <Route path='/redux-tool-kit-page/' element={<ReduxToolKitPage />}>
-         P2:      <Route path='redux-tool-kit-todo-app' element={<ReduxToolKitTodoApp />} />
-               </Route>
-
+            <Route path='/redux-tool-kit-page/' element={<ReduxToolKitPage />}>             path='P1': 
+               <Route path='redux-tool-kit-todo-app' element={<ReduxToolKitTodoApp />} />   path='P2':
+            </Route>
 
     3. File Name: ReduxToolKitPage.jsx (Component which gets loaded on Path P1)
         - In this component, there is a hyper link (NavLink) to load Redux Tool Kit Todo App (Path P2).
@@ -59,12 +68,12 @@
         - NavLink tag contains a property 'to' and it should be initialized with value P2.
         - There is an Outlet tag which needs to be used here after NavLink in order to render the navigation (hyper link/NavLink).
 
-        <>
-            <div>
-                <h3>Redux Tool Kit Page!</h3>
-                <br />
-                <button onClick={HomeButtonOnClickEventHandler}>Home</button>
-         P2:    <NavLink to='redux-tool-kit-todo-app'>Redux ToolKit Todo App</NavLink>
-            </div>
-            <Outlet />
-        </>
+            <>
+                <div>
+                    <h3>Redux Tool Kit Page!</h3>
+                    <br />
+                    <button onClick={HomeButtonOnClickEventHandler}>Home</button>
+                    <NavLink to='redux-tool-kit-todo-app'>Redux ToolKit Todo App</NavLink>  to='P2':
+                </div>
+                <Outlet />
+            </>
