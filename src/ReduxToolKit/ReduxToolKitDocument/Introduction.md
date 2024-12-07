@@ -32,6 +32,9 @@
         - Redux toolkit simplifies the use of Thunks for handling asynchronous actions by including Redux Thunk as a default middleware.
         - This allows us to write asynchronous logic with our action creators in a more easily and readable way.
 
+    - CreateAsyncThunk():
+        - This function is used to create asynchronous request.
+
     - Selectors:
         - Redux toolkit provides createSelector utility that simplifies the process of selecting data from Redux store.
         - This can help us to avoid redundant calculations and improve the performance of the application.
