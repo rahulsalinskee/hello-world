@@ -15,6 +15,7 @@
 - Syntax:
     Example 1:
         Reference URL: https://www.geeksforgeeks.org/useroutes-hook-in-react-router/
+
         import { useRoutes } from 'react-router-dom';
 
         const routeConfig = [
@@ -36,15 +37,18 @@
 
     Example 2:
         Reference URL: https://api.reactrouter.com/v7/functions/react_router.useRoutes.html
+
         import * as React from "react";
         import { useRoutes } from "react-router";
 
         function App() {
-            let element = useRoutes([
+            let element = useRoutes(
+            [
                 {
                     path: "/",
                     element: <Dashboard />,
-                    children: [
+                    children: 
+                    [
                         {
                             path: "messages",
                             element: <DashboardMessages />,
@@ -62,3 +66,25 @@
             ]);
             return element;
         }
+
+    - Explanation:
+        - This code snippet is using the `useRoutes` hook from the `react-router` library to define the routing configuration for a React application.
+        - The `useRoutes` hook takes an array of route configurations as an argument. 
+        - Each route configuration object has properties like 
+            - `path`
+                - The `path` property specifies the URL path for the route
+            - `element`
+                - The `element` property specifies the component to render when the route is matched
+            - `children`
+                - The `children` property specifies any child routes
+        
+        - In this specific example, the `useRoutes` hook is used to define two routes:
+            - The first route has a path of "/" and an element of `<Dashboard />`
+                - It also has two child routes with paths "messages" and "tasks" and corresponding elements
+                    - `<DashboardMessages />`
+                    - `<DashboardTasks />`
+
+                - The second route has a path of "team" and an element of `<AboutPage />`.
+                - The `useRoutes` hook returns the element to render based on the current URL.
+
+        - The `App` component renders the result of the `useRoutes` hook, which will be the element corresponding to the current URL.
