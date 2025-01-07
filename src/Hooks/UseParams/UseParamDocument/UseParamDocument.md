@@ -12,6 +12,19 @@ Code Change:
    1. In App JS, we need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage where BrowserRouter is implemented (In this example, BrowserRouter is implemented in App JS)
     <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />
 
+    Explanation:
+        In the above line of code:
+            The colons (`:`) before `firstName` and `lastName` indicate **URL parameters**. 
+            These parameters allow us to capture values from the URL and pass them to the component as props
+            For example, 
+                if (The URL is `/dashboard/Rahul/Salinskee`)
+                    Then
+                        The `DashboardPage` component will receive 
+                            `firstName` as `Rahul`
+                            `lastName` as `Salinskee`
+
+This is useful for creating dynamic routes where parts of the URL can change based on user input or other factors.
+
     2. We need to use this (variable name(s)) route in the file for which this route (variable name(s)) in App JS is for (In this case, it is used for Dashboard Page).
 
     export function DashboardPage() {

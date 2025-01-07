@@ -86,7 +86,15 @@ export function ApplicationRouter() {
                         </Route>
                     </Route>
                     <Route path='/dashboard' element={<DashboardPage />} />
-                    {/* UseParams Hook: 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 2. We need to use this (variable name) route in DashboardPage JXS file */}
+                    {
+                        /* UseParams Hook: 
+                         * 1. Need to add route (Here, route is 'firstName' and 'lastName' variable) for DashboardPage 
+                         * 2. We need to use this (variable name) route in DashboardPage JXS file 
+                         * It defines a route with a path of `/dashboard/:firstName/:lastName` and 
+                         *                          sets the `DashboardPage` component as the element to render when this route is matched. 
+                         * The `:firstName` and `:lastName` are route parameters, which can be accessed in the `DashboardPage` component using the `useParams` hook.
+                        */
+                    }
                     <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />
                     {/* UseNavigate Hook: Need to add route here for UseNavigate Hook. In this case ProductPage and CartPage needs to be added in Route. */}
                     <Route path='/product' element={<ProductPage />} />
