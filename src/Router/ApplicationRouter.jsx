@@ -93,6 +93,7 @@ export function ApplicationRouter() {
                          * It defines a route with a path of `/dashboard/:firstName/:lastName` and 
                          *                          sets the `DashboardPage` component as the element to render when this route is matched. 
                          * The `:firstName` and `:lastName` are route parameters, which can be accessed in the `DashboardPage` component using the `useParams` hook.
+                         * Refer: UseParamDocument.md file for ":firstName" and ":lastName"
                         */
                     }
                     <Route path='/dashboard/:firstName/:lastName' element={<DashboardPage />} />
